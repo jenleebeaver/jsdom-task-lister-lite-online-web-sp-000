@@ -34,6 +34,7 @@ const createNewTask = event => {
   //using preventDefault to stop form from submitting before task is logged
   const newTaskDescription = document.getElementById("new-task-description");
   const newTask = document.createElement("li")
+  alert('test');
   newTask.innerText = newTaskDescription.value;
   appendNewTask(newTask);
   event.target.reset()
