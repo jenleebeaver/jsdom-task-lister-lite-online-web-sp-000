@@ -32,9 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
 const createNewTask = event => {
   event.preventDefault()
   //using preventDefault to stop form from submitting before task is logged
+  alert('test');
+  
   const newTaskDescription = document.getElementById("new-task-description");
   const newTask = document.createElement("li")
-  alert('test');
   newTask.innerText = newTaskDescription.value;
   appendNewTask(newTask);
   event.target.reset()
